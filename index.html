@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Go Trip</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/resetcss.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="shortcut icon" href="images/logofav.png">
+</head>
+<body>
+	<header class="header" id="home">
+		<div class="container">
+			<div class="header-top">
+				<nav class="nav">
+					<a href="#!"><img src="images/header/logo.svg" alt="logo"></a>
+					<ul class="nav-list">
+						<li class="nav-item"><a href="#!" class="nav-link">Домой</a></li>
+						<li class="nav-item"><a href="#location" class="nav-link">Услуги</a></li>
+						<li class="nav-item"><a href="#review" class="nav-link">Отзывы</a></li>
+						<li class="nav-item"><a href="#subscribe" class="nav-link">Контакты</a></li>
+					</ul>
+					<div class="nav-login">
+						<a href="#!" class="signup">Sign In</a>
+						<a href="#!" class="btn-login">Войти</a>
+					</div>
+				</nav>
+			</div>
+			<div class="header-content">
+				<div class="header-content-text">
+					<p class="header-badge">Исследуй мир</p>
+					<h1 class="header-title">Исследуй Природную Красоту Вместе с Нами</h1>
+					<p class="header-subtitle">исследуйте красоту нашей земли и получайте удовольствие</p>
+					<a href="#!" class="btn">Исследовать</a>
+				</div>
+				<img src="images/header/header-img2.png" alt="Картинка" class="header-img">
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="location">
+			<div class="container-wide">
+				<div class="location-row" id="location">
+					<div class="location-row-text">
+						<h2 class="location-title"><span>Выберите понравившееся</span>
+						Местоположение</h2>
+					    <p class="location-subtitle">Проводим масштабные экскурсии и туристические поездки во множество красивейших мест со всего мира
+					    </p>
+					    <a href="#!" class="btn">Забронировать</a>
+					</div>
+					<div class="location-row-slider">
+						<div class="slider">
+							<div class="owl-carousel">
+								<img src="images/slider/01b.jpg" alt="Slider Item 1" class="slider-item">
+								<img src="images/slider/02b.jpg" alt="Slider Item 2" class="slider-item">
+								<img src="images/slider/03b.jpg" alt="Slider Item 3" class="slider-item">
+							</div>
+							<button class="slider-btn slider-btn--left">
+								<img src="images/slider/arrow-left.svg" alt="Стрелка влево">
+							</button>
+							<button class="slider-btn slider-btn--right">
+								<img src="images/slider/arrow-right.svg" alt="Стрелка вправо">
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="customers">
+			<div class="container">
+				<div class="customers-row" id="review">
+					<img src="images/customers/cust-img.jpg" alt="Картинка CTA раздела" class="cust-img">
+					<div class="customers-content">
+						<h2 class="cust-title">Что говорят о нас наши клиенты?</h2>
+						<div class="cust-review">
+							<img src="images/customers/xpeople.png" alt="Профиль, картинка" class="cust-review-profile">
+							<div class="review-info-profile">
+								<h3>Григорий</h3>
+								<p>Сентоса, Сингапур</p>
+							</div>
+						</div>
+						<p class="cust-review-text">
+							Очень приятное обслуживание делает его комфортным и прекрасным местом в мире.
+						</p>
+						<img src="images/customers/stars-rating.svg" alt="Рейтинг" class="review-stars">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="cta">
+			<div class="container">
+				<div class="cta-block" id="ctab">
+					<h2>
+						Подготовьтесь и Начните <br> Исследовать Вместе с Нами.
+					</h2>
+					<p>Сегодня для вас самая выгодная скидка. <br> Так что поторопитесь и приступайте к путешествиям!</p>
+					<a href="#!" class="btn">Вперед</a>
+				</div>
+			</div>
+		</section>
+		<section class="subscribe">
+			<div class="container">
+				<div class="subscribe-content" id="subscribe">
+					<h2 class="subscribe-title">Подпишитесь на нашу рассылку</h2> 
+					<form action="" class="form-subscribe">
+						<input type="email" class="form-subscribe-input" placeholder="Ваш адрес эл. почты">
+						<button class="form-btn">Подписаться</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<nav class="nav">
+					<a href="#!"><img src="images/footer/logo.svg" alt="logo"></a>
+					<ul class="nav-list">
+						<li class="nav-item"><a href="#home" class="nav-link-footer">Домой</a></li>
+						<li class="nav-item"><a href="#location" class="nav-link-footer">Услуги</a></li>
+						<li class="nav-item"><a href="#ctab" class="nav-link-footer">Цены</a></li>
+						<li class="nav-item"><a href="#subscribe" class="nav-link-footer">Контакты</a></li>
+					</ul>
+					<div class="nav-login-footer">
+						<a href="#!" class="signup-footer">Sign In</a>
+						<a href="#!" class="btn-login" id="btn-login-footer">Войти</a>
+					</div>
+				</nav>
+			</div>
+		</footer>
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
