@@ -1,0 +1,449 @@
+/* Для всего сайта */
+
+:root {
+	--container-width: 1270px;
+	--container-padding: 15px;
+	--secondary: rgba(15, 31, 28, 0.5);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Golos Text", sans-serif;
+	background-color: #F6F6F6;
+	color: #0F1F1C;
+}
+
+.container {
+	max-width: var(--container-width);
+	padding: 0 var(--container-padding);
+	margin: 0 auto;
+}
+
+.container-wide {
+	padding-left: calc( (100% - var(--container-width))/2 + var(--container-padding) );
+}
+
+.btn {
+	display: inline-block;
+	padding: 25px 45px;
+	color: #FFFFFF;
+	background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%);
+	border-radius: 25px;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.btn:hover {
+	color: rgb(245, 233, 127);
+	transition: color 0.2s ease-in;
+}
+
+.btn:active {
+	position: relative;
+	top: 1px;
+}
+
+
+
+/* Шапка сайта */
+
+.header {
+	position: relative;
+	padding-top: 44px;
+	min-height: 940px;
+	background: linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%), #204434 ;
+	color: #FFFFFF;
+}
+
+.header a {
+	color: #FFFFFF;
+}
+
+.header::after {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 96px;
+	background-image: url(../images/header/header-bottom.svg);
+	background-size: 100%;
+}
+
+.header-top {
+	margin-bottom: 32px;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-list {
+	display: flex;
+	column-gap: 80px;
+}
+
+.nav-link:hover {
+	color: #D5D5D5;
+	transition: color 0.2s;
+}
+
+.nav-login {
+	display: flex;
+	align-items: center;
+	column-gap: 25px;
+}
+
+.nav-login a {
+	display: block;
+}
+
+.signup {
+	transition: 0.3s;
+}
+
+.signup:hover {
+	color: #D5D5D5;
+}
+
+.btn-login {
+	padding: 10px 40px;
+	background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%);
+	border-radius: 50px;
+}
+
+.btn-login:hover {
+	background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 40.03%);
+}
+
+
+
+/* Шапка, но контент)) */
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-content-text {
+	margin-top: 54px;
+	max-width: 590px;
+}
+
+.header-badge {
+	margin-bottom: 7px;
+	font-size: 18px;
+	font-weight: 500;
+	display: inline-block;
+	padding: 10px 30px;
+	background: rgba(255, 255, 255, 0.25);
+	border-radius: 15px;
+}
+
+.header-title {
+	margin-bottom: 30px;
+	font-size: 55px;
+	font-weight: 400;
+}
+
+.header-subtitle {
+	margin-bottom: 70px;
+	font-size: 20px;
+	font-weight: 700;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.header-img {
+	width: 638px;
+	height: 800px;
+}
+
+
+
+/* Основная часть, а именно описание и слайдер */
+
+.location {
+	padding: 96px 0 100px;
+	overflow-x: hidden;
+}
+
+.location-row {
+	display: flex;
+	column-gap: 50px;
+}
+
+.location-row-slider {
+	width: 1110px;
+	flex-shrink: 0;
+}
+
+.location-title span {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.location-title {
+	margin-bottom: 15px;
+	font-size: 55px;
+	font-weight: 600;
+}
+
+.location-subtitle {
+	margin-bottom: 60px;
+	font-size: 20px;
+	font-weight: 500;
+	color: var(--secondary);
+}
+
+
+
+/* Непосредственно сам слайдер */
+
+.location-row-text {
+	margin-top: 24px;
+	max-width: 500px;
+}
+
+.slider {
+ 	position: relative;
+ 	height: 456px;
+}
+
+.slider-item {
+	margin-top: 27px;
+	object-fit: cover;
+	width: 335px;
+	height: 402px;
+	border-radius: 35px;
+	transition: 0.3s ease-in;
+}
+
+.slider .center .slider-item {
+	margin-top: 0;
+	width: 380px;
+	height: 456px;
+}
+
+.slider-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 9;
+
+	width: 68px;
+	height: 68px;
+	border-radius: 50%;
+	align-items: center;
+	display: flex;
+	background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%), #8b8b8b;
+}
+
+.slider-btn--left {
+	left: -27px;
+	padding-left: 24px;
+	justify-content: flex-start;
+}
+
+.slider-btn--right {
+	right: -27px;
+	padding-right: 24px;
+	justify-content: flex-end;
+}
+
+
+
+/* Раздел Customers */
+
+.customers {
+	padding: 100px 0 100px;
+}
+
+.customers-row {
+	display: flex;
+	column-gap: 70px;
+}
+
+.cust-img {
+	border-radius: 30px;
+}
+
+.customers-content {
+	max-width: 565px;
+}
+
+.cust-title {
+	margin-bottom: 35px;
+	font-size: 45px;
+	font-weight: 500;
+}
+
+.cust-review {
+	margin-bottom: 60px;
+	display: flex;
+	column-gap: 33px;
+}
+
+.cust-review-profile {
+	width: 134px;
+	height: 134px;
+	background-color: #FF794E;
+	border-radius: 50%;
+}
+
+.review-info-profile h3 {
+	margin-top: 18px;
+	margin-bottom: 10px;
+	font-size: 33px;
+	font-weight: 500;
+}
+
+.review-info-profile p {
+	font-size: 25px;
+	font-weight: 400;
+	color: var(--secondary);
+}
+
+.cust-review-text {
+	margin-bottom: 30px;
+	font-size: 22px;
+	font-weight: 500;
+	color: var(--secondary);
+}
+
+
+/* CTA раздел (от английского call-to-action -- призыв к действию) */
+
+.cta {
+	padding: 133px 0 135px;
+}
+
+.cta-block {
+	position: relative;
+	padding-top: 116px;
+	background-color: #FFFFFF;
+	border-radius: 60px;
+	min-height: 580px;
+	text-align: center;
+}
+
+.cta-block::after,
+.cta-block::before {
+	content: "";
+	position: absolute;
+	width: 63px;
+	height: 83px;
+}
+
+.cta-block::after {
+	top: 74px;
+	right: 80px;
+	background-image: url(../images/cta/cta-el-01.svg);
+}
+
+.cta-block::before {
+	left: 74px;
+	bottom: 56px;
+	background-image: url(../images/cta/cta-el-02.svg);
+}
+
+.cta-block h2 {
+	margin-bottom: 30px;
+	font-size: 45px;
+	font-weight: 500;
+}
+
+.cta-block p {
+	margin-bottom: 60px;
+	font-size: 30px;
+	font-weight: 400;
+	color: var(--secondary);
+}
+
+
+
+/* Subscribe - секция с формой */
+
+.subscribe {
+	padding-bottom: 106px;
+}
+
+.subscribe-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.subscribe-title {
+	margin-bottom: 60px;
+	font-size: 45px;
+	font-weight: 600;
+}
+
+.form-subscribe {
+	width: 800px;
+	justify-content: space-between;
+	display: flex;
+	column-gap: 30px;
+	padding: 12px 15px 12px 46px;
+	background-color: #FFFFFF;
+	border-radius: 35px;
+}
+
+.form-subscribe-input{
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.form-subscribe-input::placeholder {
+	color: var(--secondary);
+}
+
+.form-btn {
+	display: inline-block;
+	padding: 30px 85px;
+	color: #FFFFFF;
+	font-size: 25px;
+	font-weight: 500;
+	border-radius: 35px;
+	background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%), #8b8b8b;
+}
+
+
+
+/* Footer - подвал сайта (Большинство стилей цепляет из header'а, изменены лишь лого и цвета ссылок) */
+
+.footer {
+	padding-bottom: 74px;
+}
+
+.footer a {
+	color: var(--secondary);
+}
+
+.nav-login-footer {
+	display: flex;
+	align-items: center;
+	column-gap: 60px;
+}
+
+#btn-login-footer {
+	color: #FFFFFF;
+}
+
+.signup-footer {
+	transition: 0.3s;
+}
+
+.signup-footer:hover {
+	color: #373737;
+}
+
+
